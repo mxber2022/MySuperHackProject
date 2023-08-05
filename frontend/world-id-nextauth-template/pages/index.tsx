@@ -10,11 +10,13 @@ export default function IndexPage() {
     
   }
 
+  console.log(`${process.env.WLD_CLIENT_ID}`);
+
   return (
     <Layout>
       <h1>Hello Human</h1>
       <IDKitWidget
-        app_id={`$process.env.WLD_CLIENT_ID`}
+        app_id="app_staging_6e443356b5f89f3ed31f7ce51a891829"
         action="vote_1" // this is your action name from the Developer Portal
         onSuccess={onSuccess} // callback when the modal is closed
         handleVerify={handleVerify} // optional callback when the proof is received
